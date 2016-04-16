@@ -36,7 +36,7 @@ Default: `1`
 
 How many bears you want.
 
-### return
+#### return
 
 Type: `array`
 
