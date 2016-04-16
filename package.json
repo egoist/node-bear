@@ -1,0 +1,42 @@
+{
+  "name": "node-bear",
+  "version": "0.0.0",
+  "description": "Get random bear ASCII art.",
+  "license": "MIT",
+  "repository": "egoist/node-bear",
+  "main": "index.js",
+  "author": {
+    "name": "EGOIST",
+    "email": "0x142857@gmail.com",
+    "url": "github.com/egoist"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "node spider.js && xo && ava"
+  },
+  "files": [
+    "index.js",
+    "bears.json"
+  ],
+  "keywords": [
+    "bear",
+    "ascii",
+    "art",
+    "emojicon"
+  ],
+  "devDependencies": {
+    "aimer": "0.0.2",
+    "ava": "latest",
+    "lodash.flatten": "^4.2.0",
+    "xo": "latest"
+  },
+  "xo": {
+    "semicolon": false,
+    "space": 2
+  },
+  "dependencies": {
+    "node-random-number": "^0.1.1"
+  }
+}
