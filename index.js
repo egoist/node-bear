@@ -6,11 +6,9 @@ module.exports = function (opts) {
   opts = opts || {}
   var count = opts.count || 1
   var indexes = random({start: 0, end: bears.length, count: count})
-  var ret = []
-  indexes.forEach(function (index) {
-    ret.push(bears[index])
+  return indexes.map(function (index) {
+    return bears[index]
   })
-  return ret
 }
 
 module.exports.bears = bears

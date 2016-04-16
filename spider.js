@@ -25,3 +25,7 @@ Promise.all([1, 2, 3, 4, 5].map(page => spider(page)))
     Fs.writeFileSync('bears.json', JSON.stringify(flatten(ret), null, 2), 'utf8')
     console.log('done!')
   })
+  .catch(e => {
+    console.log(e.stack)
+    process.exit(1)
+  })
